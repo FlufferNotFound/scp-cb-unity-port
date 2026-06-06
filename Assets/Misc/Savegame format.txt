@@ -1,0 +1,4 @@
+The original gave stores its save game data as binary data, and while it's small it's hard to parse,
+so instead we'll store save games are JSON files with the following data:
+
+19x19
