@@ -12,6 +12,8 @@ using UnityEngine.Video;
 
    VP9 looks way better than VP8 but Unity doesn't support it, and though I found some plugins in the asset store that add
    support for them, I can't afford them, so this stays until I find a way to add support for VP9.
+    
+-FlufferNotFound, 2026-06-08
    */
 
 [System.Serializable]
@@ -70,7 +72,7 @@ public class StartUpVideoPlayer : MonoBehaviour
         //Check if the video and audio are added, even though the class has the require component attribute
         if (audioSource == null || videoPlayer == null)
         {
-            Debug.LogError("VideoPlayer and AudioSource components are missing, please add them");
+            Debug.LogError("VideoPlayer and AudioSource components are missing, please add them.");
         }
 
         //Component configuration
