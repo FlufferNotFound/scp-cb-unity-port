@@ -1,5 +1,0 @@
-These tools for game model extraction (Not including b3d files) were purpose built for
-this game's 3D model files, and are guaranteed to work for other games that used the same file.
-
-It's also here where the AI content label comes from, as I used it to reverse-engineer the files.
-I'm sorry, but I didn't have the time or experience to sit down and this manually.

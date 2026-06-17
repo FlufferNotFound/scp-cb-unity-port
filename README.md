@@ -1,20 +1,19 @@
 This project is a port of 2012's horror game **SCP - Containment Breach**, by _Joonas Rikkonen_, version 1.3.11, to the Unity engine, while keeping it as 1:1 as possible with the original.
 
-The original game is FOSS under the Creative Commons Attribution-ShareAlike 3.0, and in compliance with the license's terms, this project is also FOSS under said license.
+As SCP Foundation Wikipedia content is licensed under the Creative Commons Attribution-ShareAlike 3.0, the original game is FOSS under said license, and in compliance with the license's terms, this project is also FOSS.
 
-### Links
+### Additional links.
 
-- You can download the latest version of the original game, and other SCP games reloead by Undertow Games from the following link.
+- You can download the latest version of the original game, and other SCP related games released by Undertow Games from the following link.
   - https://scpcbgame.com/
-- Original game's Github
+- Original game's Github repository
   - https://github.com/Regalis11/scpcb
 - SCP Foundation Wikipedia
   - https://scp-wiki.wikidot.com/
-- SCP - Containment Breach game wikipedia (English)
+- SCP - Containment Breach game Fandom Wikipedia (English)
   - https://scpcb.fandom.com/wiki/SCP_-_Containment_Breach_Wiki
 - Undertow Games' website
   - https://undertowgames.com/
-
 - Creative Commons BY-SA 3.0 License
   - http://creativecommons.org/licenses/by-sa/3.0/
 - The SIL Open Font License version 1.1 - 26 February 2007
@@ -122,7 +121,7 @@ Thank you for bringing us this wonderful horror experience :)!
     - 4chan's /v/ board and everyone in the SCP-CB forum
 
 - ### In-game SCPs are based on works from the SCP Foundation community
-  - The SCP-CB logo and SCP logo are based on the logo created by "far2"
+  - SCP - Containment Breach and SCP logo are based on the logo made by "far2"
   - SCP-008 is based on "SCP-008 - Zombie Plague" by "Lee Byron"
   - SCP-012 is based on "SCP-012 - A Bad Composition", author unknown
   - SCP-035 is based on "SCP-035 - Possessive Mask", by "Kain Pathos Crow"

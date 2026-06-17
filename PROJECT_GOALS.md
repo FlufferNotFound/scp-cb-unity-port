@@ -5,3 +5,13 @@ In addition, I also plan on adding a modding API so additional content can be ad
 Keep the game as 1:1 as possible with the original.
 Add support for multiple operating systems (Windows, Linux and MacOS)
 Add modding support so popular mods of the original game can be brought here.
+
+- ### Goals
+  - [ ] Keep it 1:1 with the OG wherever possible.
+  - [ ] Add a modding API
+  - [ ] Bring it to multiple platforms
+    - [ ] Windows
+    - [ ] MacOS
+    - [ ] Linux
+  - [ ] Remove potentially copyrighted content
+  - [ ] Replace copyrighted content
