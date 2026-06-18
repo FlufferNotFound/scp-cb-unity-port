@@ -47,13 +47,6 @@ public class StartUpVideoPlayer : MonoBehaviour
 
     private void Awake()
     {
-        //Check if there's videos, otherwirse just skip to menu
-        if (videoSequences.Length <= 0)
-        {
-            Debug.LogWarning("No videos on sequence. Loading menu.");
-            sceneController.LoadSceneByName("Menu");
-        }
-
         //Check if scene controller exists
         if (GameObject.Find("SceneController") == null)
         {
@@ -65,11 +58,16 @@ public class StartUpVideoPlayer : MonoBehaviour
             if (sceneController == null) Debug.LogError("Found SceneController but it has no SceneController component.");
         }
 
-        //Init the other components
+        //skip to menu if there's no videos
+        if (videoSequences.Length <= 0)
+        {
+            Debug.LogWarning("No videos on sequence. Loading menu.");
+            sceneController.LoadSceneByName("Menu");
+        }
+
         videoPlayer = GetComponent<VideoPlayer>();
         audioSource = GetComponent<AudioSource>();
 
-        //Check if the video and audio are added, even though the class has the require component attribute
         if (audioSource == null || videoPlayer == null)
         {
             Debug.LogError("VideoPlayer and AudioSource components are missing, please add them.");
@@ -92,17 +90,14 @@ public class StartUpVideoPlayer : MonoBehaviour
     {
         for (int i = 0; i < videoSequences.Length; i++)
         {
-            //Skip the loop is there none at index
+            //Skip if no video on index
             if (videoSequences[i].videoClip == null)
             {
                 //Fancier than i++ i guess. Didn't know this one existed
                 continue;
             }
-            else
-            {
-                videoPlayer.clip = videoSequences[i].videoClip;
-            }
 
+            videoPlayer.clip = videoSequences[i].videoClip;
             audioSource.clip = videoSequences[i].audioClip;
 
             //Prepare the video, so it's on buffer and doesn't stutter or freeze while playing.
@@ -127,6 +122,9 @@ public class StartUpVideoPlayer : MonoBehaviour
 
             videoPlayer.Stop();
             audioSource.Pause();
+
+            videoPlayer = null;
+            audioSource = null;
         }
 
         sceneController.LoadSceneByName("Menu");
