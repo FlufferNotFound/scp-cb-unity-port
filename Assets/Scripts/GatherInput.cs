@@ -1,5 +1,3 @@
-
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,37 +5,39 @@ public class GatherInput : MonoBehaviour
 {
     private InputSystem_Actions inputActions;
 
-    private bool _isMovingForward;
+    //1 is forward, -1 backward, 0 idle
+    private float _movingValue;
 
-    private bool _isStrafingLeft;
+    //1 is right, -1 left, 0 idle
+    private float _strafingValue;
 
-    private bool _isMovingBackward;
+    private bool _quickSave;
 
-    private bool _isStrafingRight;
-
-    private bool _isQuickSave;
-
-    private bool _isManualBlink;
+    private bool _manualBlink;
 
     private bool _isSprinting;
 
     private bool _isCrouching;
 
-    private bool _isInventoryOpen;
+    private bool _inventoryInteract;
 
-    private bool _isConsoleOpen;
+    private bool _consoleInteract;
 
-    public bool IsMovingForward { get => _isMovingForward; set => _isMovingForward = value; }
-    public bool IsStrafingLeft { get => _isStrafingLeft; set => _isStrafingLeft = value; }
-    public bool IsMovingBackward { get => _isMovingBackward; set => _isMovingBackward = value; }
-    public bool IsStrafingRight { get => _isStrafingRight; set => _isStrafingRight = value; }
+    private float IsMoving { get => _movingValue; set => _movingValue = value; }
 
-    public bool IsQuickSave { get => _isQuickSave; set => _isQuickSave = value; }
-    public bool IsManualBlink { get => _isManualBlink; set => _isManualBlink = value; }
+    private float IsStrafing { get => _strafingValue; set => _strafingValue = value; }
+   
+    public bool QuickSaving { get => _quickSave; set => _quickSave = value; }
+    
+    public bool ManualBlink { get => _manualBlink; set => _manualBlink = value; }
+    
     public bool IsSprinting { get => _isSprinting; set => _isSprinting = value; }
+    
     public bool IsCrouching { get => _isCrouching; set => _isCrouching = value; }
-    public bool IsInventoryOpen { get => _isInventoryOpen; set => _isInventoryOpen = value; }
-    public bool IsConsoleOpen { get => _isConsoleOpen; set => _isConsoleOpen = value; }
+    
+    public bool IsInventoryInteract { get => _inventoryInteract; set => _inventoryInteract = value; }
+    
+    public bool IsConsoleInteract { get => _consoleInteract; set => _consoleInteract = value; }
 
     private void Awake()
     {
@@ -48,96 +48,144 @@ public class GatherInput : MonoBehaviour
      * This is how my teacher taught us to do inputs.
      * ngl, I don't like how it looks but I've used this 
      * on other projects and it works, so it stays for now,
-     * but I wish there were a better way to do this.
+     * but I wish there were a better, less messier way to do this.
     */
 
     private void OnEnable()
     {
-        inputActions.Player.MoveForward.performed += StartMove;
-        inputActions.Player.MoveForward.canceled += StopMove;
+        inputActions.Player.Move.performed += StartMoving;
+        inputActions.Player.Move.canceled += StopMoving;
 
-        inputActions.Player.StrafeLeft.performed += StartMove;
-        inputActions.Player.StrafeLeft.canceled += StopMove;
+        inputActions.Player.Strafe.performed += StartStrafing;
+        inputActions.Player.Strafe.canceled += StopStrafing;
 
-        inputActions.Player.MoveBackward.performed += StartMove;
-        inputActions.Player.MoveBackward.canceled += StopMove;
+        inputActions.Player.QuickSave.performed += StartQuickSave;
+        inputActions.Player.QuickSave.canceled += StopQuickSave;
 
-        inputActions.Player.StrafeRight.performed += StartMove;
-        inputActions.Player.StrafeRight.canceled += StopMove;
+        inputActions.Player.Blink.performed += StartBlink;
+        inputActions.Player.Blink.canceled += StopBlink;
 
-        inputActions.Player.QuickSave.performed += StartMove;
-        inputActions.Player.QuickSave.canceled += StopMove;
+        inputActions.Player.Sprint.performed += StartSprint;
+        inputActions.Player.Sprint.canceled += StopSprint;
 
-        inputActions.Player.ManualBlink.performed += StartMove;
-        inputActions.Player.ManualBlink.canceled += StopMove;
+        inputActions.Player.Crouch.performed += StartCrouch;
+        inputActions.Player.Crouch.canceled += StopCrouch;
 
-        inputActions.Player.Sprint.performed += StartMove;
-        inputActions.Player.Sprint.canceled += StopMove;
+        inputActions.Player.Inventory.performed += StartInventoryInteract;
+        inputActions.Player.Inventory.canceled += StopInventoryInteract;
 
-        inputActions.Player.Crouch.performed += StartMove;
-        inputActions.Player.Crouch.canceled += StopMove;
-
-        inputActions.Player.Inventory.performed += StartMove;
-        inputActions.Player.Inventory.canceled += StopMove;
-
-        inputActions.Player.Console.performed += StartMove;
-        inputActions.Player.Console.canceled += StopMove;
+        inputActions.Player.Console.performed += StartConsoleInteract;
+        inputActions.Player.Console.canceled += StopConsoleInteract;
 
         inputActions.Player.Enable();
     }
 
     private void OnDisable()
     {
-        inputActions.Player.MoveForward.performed -= StartMove;
-        inputActions.Player.MoveForward.canceled -= StopMove;
+        inputActions.Player.Move.performed -= StartMoving;
+        inputActions.Player.Move.canceled -= StopMoving;
 
-        inputActions.Player.StrafeLeft.performed -= StartMove;
-        inputActions.Player.StrafeLeft.canceled -= StopMove;
+        inputActions.Player.Strafe.performed -= StartStrafing;
+        inputActions.Player.Strafe.canceled -= StopStrafing;
 
-        inputActions.Player.MoveBackward.performed -= StartMove;
-        inputActions.Player.MoveBackward.canceled -= StopMove;
+        inputActions.Player.QuickSave.performed -= StartQuickSave;
+        inputActions.Player.QuickSave.canceled -= StopQuickSave;
 
-        inputActions.Player.StrafeRight.performed -= StartMove;
-        inputActions.Player.StrafeRight.canceled -= StopMove;
+        inputActions.Player.Blink.performed -= StartBlink;
+        inputActions.Player.Blink.canceled -= StopBlink;
 
-        inputActions.Player.QuickSave.performed -= StartMove;
-        inputActions.Player.QuickSave.canceled -= StopMove;
+        inputActions.Player.Sprint.performed -= StartSprint;
+        inputActions.Player.Sprint.canceled -= StopSprint;
 
-        inputActions.Player.ManualBlink.performed -= StartMove;
-        inputActions.Player.ManualBlink.canceled -= StopMove;
+        inputActions.Player.Crouch.performed -= StartCrouch;
+        inputActions.Player.Crouch.canceled -= StopCrouch;
 
-        inputActions.Player.Sprint.performed -= StartMove;
-        inputActions.Player.Sprint.canceled -= StopMove;
+        inputActions.Player.Inventory.performed -= StartInventoryInteract;
+        inputActions.Player.Inventory.canceled -= StopInventoryInteract;
 
-        inputActions.Player.Crouch.performed -= StartMove;
-        inputActions.Player.Crouch.canceled -= StopMove;
-
-        inputActions.Player.Inventory.performed -= StartMove;
-        inputActions.Player.Inventory.canceled -= StopMove;
-
-        inputActions.Player.Console.performed -= StartMove;
-        inputActions.Player.Console.canceled -= StopMove;
+        inputActions.Player.Console.performed -= StartConsoleInteract;
+        inputActions.Player.Console.canceled -= StopConsoleInteract;
 
         inputActions.Player.Disable();
     }
 
-    private void StartMove(InputAction.CallbackContext context)
+    private void StartMoving(InputAction.CallbackContext context)
     {
-        _axisX = context.ReadValue<float>();
+        _movingValue = context.ReadValue<float>();
     }
 
-    private void StopMove(InputAction.CallbackContext context)
+    private void StopMoving(InputAction.CallbackContext context)
     {
-        _axisX = 0;
+        _movingValue = 0;
     }
 
-    private void StartJump(InputAction.CallbackContext context)
+    private void StartStrafing(InputAction.CallbackContext context)
     {
-        _isJumping = true;
+        _strafingValue = context.ReadValue<float>();
     }
 
-    private void StopJump(InputAction.CallbackContext context)
+    private void StopStrafing(InputAction.CallbackContext context)
     {
-        _isJumping = false;
+        _strafingValue = 0;
+    }
+
+    private void StartQuickSave(InputAction.CallbackContext context)
+    {
+        _quickSave = true;
+    }
+
+    private void StopQuickSave(InputAction.CallbackContext context)
+    {
+        _quickSave = false;
+    }
+
+    private void StartBlink(InputAction.CallbackContext context)
+    {
+        _manualBlink = true;
+    }
+
+    private void StopBlink(InputAction.CallbackContext context)
+    {
+        _manualBlink = false;
+    }
+
+    private void StartSprint(InputAction.CallbackContext context)
+    {
+        _isSprinting = true;
+    }
+
+    private void StopSprint(InputAction.CallbackContext context)
+    {
+        _isSprinting = false;
+    }
+
+    private void StartCrouch(InputAction.CallbackContext context)
+    {
+        _isCrouching = true;
+    }
+
+    private void StopCrouch(InputAction.CallbackContext context)
+    {
+        _isCrouching = false;
+    }
+
+    private void StartInventoryInteract(InputAction.CallbackContext context)
+    {
+        _inventoryInteract = true;
+    }
+
+    private void StopInventoryInteract(InputAction.CallbackContext context)
+    {
+        _inventoryInteract = false;
+    }
+
+    private void StartConsoleInteract(InputAction.CallbackContext context)
+    {
+        _consoleInteract = true;
+    }
+
+    private void StopConsoleInteract(InputAction.CallbackContext context)
+    {
+        _consoleInteract = false;
     }
 }
