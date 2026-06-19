@@ -23,9 +23,9 @@ public class GatherInput : MonoBehaviour
 
     private bool _consoleInteract;
 
-    private float IsMoving { get => _movingValue; set => _movingValue = value; }
+    public float Moving { get => _movingValue; set => _movingValue = value; }
 
-    private float IsStrafing { get => _strafingValue; set => _strafingValue = value; }
+    public float Strafing { get => _strafingValue; set => _strafingValue = value; }
    
     public bool QuickSaving { get => _quickSave; set => _quickSave = value; }
     
