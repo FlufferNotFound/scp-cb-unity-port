@@ -6,10 +6,14 @@ public class GatherInput : MonoBehaviour
     private InputSystem_Actions inputActions;
 
     //1 is forward, -1 backward, 0 idle
-    private float _movingValue;
+    private float _movingDirection;
 
     //1 is right, -1 left, 0 idle
-    private float _strafingValue;
+    private float _strafingDirection;
+
+    private float _mouseX;
+
+    private float _mouseY;
 
     private bool _quickSave;
 
@@ -23,20 +27,24 @@ public class GatherInput : MonoBehaviour
 
     private bool _consoleInteract;
 
-    public float Moving { get => _movingValue; set => _movingValue = value; }
+    public float MovingDirection { get => _movingDirection; set => _movingDirection = value; }
 
-    public float Strafing { get => _strafingValue; set => _strafingValue = value; }
-   
+    public float StrafingDirection { get => _strafingDirection; set => _strafingDirection = value; }
+
+    public float MouseX { get => _mouseX; set => _mouseX = value; }
+
+    public float MouseY { get => _mouseY; set => _mouseY = value; }
+
     public bool QuickSaving { get => _quickSave; set => _quickSave = value; }
-    
+
     public bool ManualBlink { get => _manualBlink; set => _manualBlink = value; }
-    
+
     public bool IsSprinting { get => _isSprinting; set => _isSprinting = value; }
-    
+
     public bool IsCrouching { get => _isCrouching; set => _isCrouching = value; }
-    
+
     public bool IsInventoryInteract { get => _inventoryInteract; set => _inventoryInteract = value; }
-    
+
     public bool IsConsoleInteract { get => _consoleInteract; set => _consoleInteract = value; }
 
     private void Awake()
@@ -50,7 +58,6 @@ public class GatherInput : MonoBehaviour
      * on other projects and it works, so it stays for now,
      * but I wish there were a better, less messier way to do this.
     */
-
     private void OnEnable()
     {
         inputActions.Player.Move.performed += StartMoving;
@@ -76,6 +83,12 @@ public class GatherInput : MonoBehaviour
 
         inputActions.Player.Console.performed += StartConsoleInteract;
         inputActions.Player.Console.canceled += StopConsoleInteract;
+
+        inputActions.Player.MouseX.performed += StartMouseX;
+        inputActions.Player.MouseX.canceled += StopMouseX;
+
+        inputActions.Player.MouseY.performed += StartMouseY;
+        inputActions.Player.MouseY.canceled += StopMouseY;
 
         inputActions.Player.Enable();
     }
@@ -106,27 +119,33 @@ public class GatherInput : MonoBehaviour
         inputActions.Player.Console.performed -= StartConsoleInteract;
         inputActions.Player.Console.canceled -= StopConsoleInteract;
 
+        inputActions.Player.MouseX.performed += StartMouseX;
+        inputActions.Player.MouseX.canceled += StopMouseX;
+
+        inputActions.Player.MouseY.performed += StartMouseY;
+        inputActions.Player.MouseY.canceled += StopMouseY;
+
         inputActions.Player.Disable();
     }
 
     private void StartMoving(InputAction.CallbackContext context)
     {
-        _movingValue = context.ReadValue<float>();
+        _movingDirection = context.ReadValue<float>();
     }
 
     private void StopMoving(InputAction.CallbackContext context)
     {
-        _movingValue = 0;
+        _movingDirection = 0;
     }
 
     private void StartStrafing(InputAction.CallbackContext context)
     {
-        _strafingValue = context.ReadValue<float>();
+        _strafingDirection = context.ReadValue<float>();
     }
 
     private void StopStrafing(InputAction.CallbackContext context)
     {
-        _strafingValue = 0;
+        _strafingDirection = 0;
     }
 
     private void StartQuickSave(InputAction.CallbackContext context)
@@ -187,5 +206,21 @@ public class GatherInput : MonoBehaviour
     private void StopConsoleInteract(InputAction.CallbackContext context)
     {
         _consoleInteract = false;
+    }
+
+    private void StartMouseX(InputAction.CallbackContext context) {
+        _mouseX = inputActions.Player.MouseX.ReadValue<float>();
+    }
+
+    private void StartMouseY(InputAction.CallbackContext context) {
+        _mouseY = inputActions.Player.MouseY.ReadValue<float>();
+    }
+
+    private void StopMouseX(InputAction.CallbackContext context) {
+        _mouseX = 0;
+    }
+
+    private void StopMouseY(InputAction.CallbackContext context) {
+        _mouseY = 0;
     }
 }

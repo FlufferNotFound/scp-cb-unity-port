@@ -11,33 +11,66 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    Camera mainCamera;
+
     private void Awake()
     {
+        mainCamera = Camera.main;
+        mainCamera.transform.SetParent(transform);
+        mainCamera.transform.localPosition = new Vector3(0f, 0.75f, 0f);
+
+        //Lock the cursor to the center of the screen and make it invisible
+        Cursor.lockState = CursorLockMode.Locked;
+
+
         rb = GetComponent<Rigidbody>();
         gatherInput = GetComponent<GatherInput>();
     }
 
     private void Update()
     {
-
         Move();
     }
 
 
     private void Move()
-    {   //Forward/backward
-        rb.linearVelocity = new Vector3(
-            rb.linearVelocity.x,  
-            rb.linearVelocity.y,
-            gatherInput.Moving * walkingSpeed);
+    {
 
-        //Left/right
-        rb.linearVelocity = new Vector3(
-            gatherInput.Strafing * walkingSpeed,
-            rb.linearVelocity.y,
-            rb.linearVelocity.z
-        );
+        switch (gatherInput.IsSprinting)
+        {
+            case true:
+                //Forward/backward
+                rb.linearVelocity = new Vector3(
+                    rb.linearVelocity.x,
+                    rb.linearVelocity.y,
+                    gatherInput.MovingDirection * runningSpeed);
+
+                //Left/right
+                rb.linearVelocity = new Vector3(
+                    gatherInput.StrafingDirection * runningSpeed,
+                    rb.linearVelocity.y,
+                    rb.linearVelocity.z
+                );
+                break;
+
+            case false:
+                //Forward/backward
+                rb.linearVelocity = new Vector3(
+                    rb.linearVelocity.x,
+                    rb.linearVelocity.y,
+                    gatherInput.MovingDirection * walkingSpeed);
+
+                //Left/right
+                rb.linearVelocity = new Vector3(
+                    gatherInput.StrafingDirection * walkingSpeed,
+                    rb.linearVelocity.y,
+                    rb.linearVelocity.z
+                );
+                break;
+        }
+
+        gameObject.transform.Rotate(0f, gatherInput.MouseX, 0f);
+        mainCamera.transform.Rotate(-gatherInput.MouseY, 0f, 0f);
     }
 
     public void ResetPlayerSpeed()
