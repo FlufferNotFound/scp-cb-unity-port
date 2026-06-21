@@ -72,3 +72,21 @@ This all means I have to modify the model EVEN more which is something I REALLY 
 **FlufferNotFound**
 
 ---
+
+#### 2026-06-20
+
+035's model is now finished and imported to Unity
+
+Upon closer inspection 106's model and armature aren't as messy as 035's.
+
+Ofc there's self intersecting verts but that's all for the mesh.
+
+The armature has a lot of duplicate bones in the arm and root, third spine, not sure why.
+
+---
+
+106's model was the easiest character to prepare, he's now in Unity.
+
+Moving on to 079.
+
+**FlufferNotFound**
