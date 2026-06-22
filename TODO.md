@@ -1,0 +1,119 @@
+---
+
+From initial observation, there's models that won't be used
+or that are empty.
+
+- Prepare models for export to Unity
+  - [ ] Blitz3D Models
+    - [] German officer | naziofficer.b3d
+    - [] "s2" | s2.b3d
+    - [] SCP-049 | scp-049.b3d
+    - [] SCP-066 | scp-066.b3d
+    - [] SCP-939 | scp-939.b3d
+    - [] SCP-966 | scp-966.b3d
+    - [] SCP-1048 | scp-1048.b3d
+    - [] SCP-1024-A | scp-1048a.b3d
+    - [] SCP-1024-B | scp-1048pp.b3d
+    - [] SCP-096 | scp096.b3d
+    - [] SCP-049-2 | zombie1.b3d
+    - [] SCP-008-2 | zombiesurgeon.b3d
+    - [x] SCP-173 | 173_2.b3d
+    - [] SCP-205-1 | 205_demon1.b3d
+    - [] SCP-205-2 | 205_demon2.b3d
+    - [] SCP-205-3 | 205_demon3.b3d
+    - [] SCP-205-4 | 205_woman.b3d
+    - [] SCP-372 | 372.b3d
+    - [] SCP-682 Arm | 682arm.b3d
+    - [] ??? | bll.b3d
+    - [x] Class-D | classd.b3d
+    - [] NPC | clerk.b3d
+    - [] Duck | duck_low_res.b3d
+    - [] Forest monster | forestmonster.b3d
+    - [] Guard | guard.b3d
+    - [] MTF | MTF2.b3d
+    - [x] SCP-035 | 035.b3d
+    - [] SCP-035 Tentacle | 035tentacle.b3d
+    - [x] SCP-106 | 106_2.b3d
+    - [] SCP-1499-1 | 1499-1.b3d
+    - [] Collider | doorhit.b3d
+    - [] Apache helicopter | apacherotor2.b3d
+    - [] Apache helicopter | apacherotor.b3d
+    - [] Apache helicopter | apache.b3d
+    - [] SCP-173 Box | 173box.b3d
+    - [] Light cone | lightcone.b3d
+    - [] Keys | key.b3d
+    - [] NVGs | NVG.b3d
+    - [] Origami | origami.b3d
+    - [] SCP-500 | pill.b3d
+    - [] SCP-1499 | SCP-1499.b3d
+    - [] SCP-714 | scp714.b3d
+    - [] SCP-1025 | scp1025.b3d
+    - [] SCP-Severed hand | severedhand.b3d
+    - [] Wallet | wallet.b3d
+    - [] Eyedrops | eyedrops.b3d
+    - [] Gas mask | gasmask.b3d
+    - [] Hazmat suit | hazmat.b3d
+    - [] ??? | HGIB_Skull1.b3d
+    - [] SCP-427 | 427.b3d
+    - [] Clipboard | clipboard.b3d
+    - [] Syringe | syringe.b3d
+    - [] Room | room3storage_hb.b3d
+    - [] Room | room3z2_hb.b3d
+    - [] Room | room2tesla_caution.b3d
+    - [] Room | room3gw_pipes.b3d
+    - [] Room | room3offices_hb.b3d
+    - [] Room | room2gw_pipes.b3d
+    - [] Room | medibay_props.b3d
+    - [] PC Monitor | monitor.b3d
+    - [] Room | monitor_checkpoint.b3d
+    - [] Room | pocketdimension2.b3d
+    - [] Room | pocketdimension3.b3d
+    - [] Room | pocketdimension4.b3d
+    - [] Room | pocketdimension5.b3d
+    - [] Room | pocketdimensionterrain.b3d
+    - [] Room | room012_2.b3d
+    - [] Room | room012_3.b3d
+    - [] Room | room049_hb.b3d
+    - [] Room | room1062.b3d
+    - [] Room | gatea_hitbox1.b3d
+    - [] Room | gateatunnel.b3d
+    - [] Room | gateawall1.b3d
+    - [] Room | gateawall2.b3d
+    - [] ??? | intro_labels.b3d
+    - [] Desk | IntroDesk.b3d
+    - [] Drawers | IntroDrawer.b3d
+    - [] HID Gun | lightgun.b3d
+    - [] HID Gun base | lightgunbase.b3d
+    - [] Elevator door | elevatordoor.b3d
+    - [] Exit 1 terrain | exit1terrain.b3d
+    - [] Room fan | fan.b3d
+    - [] SCP-008 Lid | 008_2.b3d
+    - [] SCP-079 | 079.b3d
+    - [] ??? | 173_2.b3d.001
+    - [] ??? | 372_hb.b3d
+    - [] ??? | 1123_hb.b3d
+    - [] ??? | CamHead.b3d
+    - [] ??? | 1499object0_cull.b3d
+    - [] ??? | 1499object1.b3d
+    - [] ??? | 1499object2.b3d
+    - [] ??? | 1499object3.b3d
+    - [] ??? | 1499object4.b3d
+    - [] ??? | 1499object5.b3d
+    - [] ??? | 1499object6.b3d
+    - [] ??? | 1499object7.b3d
+    - [] ??? | 1499object8.b3d
+    - [] ??? | 1499object9.b3d
+    - [] ??? | 1499object10.b3d
+    - [] ??? | 1499object11.b3d
+    - [] ??? | 1499object12.b3d
+    - [] ??? | 1499object13.b3d
+    - [] ??? | 1499object14.b3d
+    - [] ??? | 1499object15.b3d
+    - [] ??? | 1499plane.b3d
+    - [] Door | door.b3d
+    - [] Door frame | door_frame.b3d
+    - [] Wall | wall.b3d
+    - [] Rock 1 | rock.b3d
+    - [] Rock 2 | rock2.b3d
+    - [] Tree 1 | treetest4.b3d
+    - [] Tree 2 | treetest5.b3d

@@ -87,6 +87,14 @@ The armature has a lot of duplicate bones in the arm and root, third spine, not 
 
 106's model was the easiest character to prepare, he's now in Unity.
 
-Moving on to 079.
+**FlufferNotFound**
+
+---
+
+#### 2026-06-222
+
+While working on the Class-D's model I noticed it uses the same mesh as 035, and so does more characters.
+
+This means I can just re use the same mesh and call it a day.
 
 **FlufferNotFound**
