@@ -1,6 +1,10 @@
 This project is a port of 2012's horror game **SCP - Containment Breach**, by _Joonas Rikkonen_, version 1.3.11, to the Unity engine, while keeping it as 1:1 as possible with the original.
 
-As SCP Foundation Wikipedia content is licensed under the Creative Commons Attribution-ShareAlike 3.0, the original game is FOSS under said license, and in compliance with the license's terms, this project is also FOSS.
+For more information about the project, please check PROJECT_GOALS.md
+
+## Licensing
+
+In accordance with the SCP Foundation Wikipedia licensising terms, the original game and this port are released under the Creative Commons Attribution-ShareAlike 3.0 License.
 
 ### Additional links.
 
@@ -19,9 +23,7 @@ As SCP Foundation Wikipedia content is licensed under the Creative Commons Attri
 - The SIL Open Font License version 1.1 - 26 February 2007
   - https://openfontlicense.org/open-font-license-official-text/
 
-For more information about the project, please check PROJECT_GOALS.md
-
-Credits to the original developers.
+All credits to the original developers.
 Thank you for bringing us this wonderful horror experience :)!
 
 - ### Original developers.
@@ -156,7 +158,7 @@ Thank you for bringing us this wonderful horror experience :)!
   - The Anomalous Ducks are based on "Log of Anomalous Ducks" by "Skara Brae"
 
 - ### Additional credits
-  - Izumi Kato - Sculpture "Untitled 2004", used for SCP-173's article and as model reference.
+  - Izumi Kato - "Untitled 2004" sculpture, used for SCP-173's article and as model reference.
   - "joric" - Blitz3D Import/Export tool. https://github.com/joric/io_scene_b3d
   - Alex, "GreenXenith" - Blitz3D Import/Export tool. https://github.com/GreenXenith/io_scene_b3d
 

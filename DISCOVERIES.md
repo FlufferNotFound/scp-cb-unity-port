@@ -93,8 +93,9 @@ The armature has a lot of duplicate bones in the arm and root, third spine, not 
 
 #### 2026-06-222
 
-While working on the Class-D's model I noticed it uses the same mesh as 035, and so does more characters.
+~~While working on the Class-D's model I noticed it uses the same mesh as 035, and so does more characters.~~
+~~This means I can just re use the same mesh and call it a day.~~
 
-This means I can just re use the same mesh and call it a day.
+Nvm, the model may "be" the same but the UVs are different.
 
 **FlufferNotFound**
