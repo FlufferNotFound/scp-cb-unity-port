@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5393542547080716862
+--- !u!1 &2601920138746170102
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5130443527950515782}
-  - component: {fileID: 5790795313072436175}
-  - component: {fileID: 5960065444016238831}
+  - component: {fileID: 6217135591066096396}
+  - component: {fileID: 2452922365565999208}
+  - component: {fileID: 6818306450264601595}
   m_Layer: 0
   m_Name: SCP_035_Mask
   m_TagString: Untagged
@@ -18,38 +18,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5130443527950515782
+--- !u!4 &6217135591066096396
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5393542547080716862}
+  m_GameObject: {fileID: 2601920138746170102}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 18, y: 0.526, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5790795313072436175
+--- !u!33 &2452922365565999208
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5393542547080716862}
+  m_GameObject: {fileID: 2601920138746170102}
   m_Mesh: {fileID: -5633905646612535756, guid: 773193b3e21d2744b8fb20da12bbed7c, type: 3}
---- !u!23 &5960065444016238831
+--- !u!23 &6818306450264601595
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5393542547080716862}
+  m_GameObject: {fileID: 2601920138746170102}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0

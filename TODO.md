@@ -16,7 +16,7 @@ or that are empty.
     - [] SCP-1024-B | scp-1048pp.b3d
     - [] SCP-096 | scp096.b3d
     - [] SCP-049-2 | zombie1.b3d
-    - [] SCP-008-2 | zombiesurgeon.b3d
+    - [x] SCP-008-2 | zombiesurgeon.b3d
     - [x] SCP-173 | 173_2.b3d
     - [] SCP-205-1 | 205_demon1.b3d
     - [] SCP-205-2 | 205_demon2.b3d
@@ -26,11 +26,11 @@ or that are empty.
     - [] SCP-682 Arm | 682arm.b3d
     - [] ??? | bll.b3d
     - [x] Class-D | classd.b3d
-    - [] NPC | clerk.b3d
+    - [x] NPC | clerk.b3d
     - [] Duck | duck_low_res.b3d
     - [] Forest monster | forestmonster.b3d
     - [] Guard | guard.b3d
-    - [] MTF | MTF2.b3d
+    - [x] MTF | MTF2.b3d
     - [x] SCP-035 | 035.b3d
     - [] SCP-035 Tentacle | 035tentacle.b3d
     - [x] SCP-106 | 106_2.b3d
@@ -88,7 +88,7 @@ or that are empty.
     - [] Exit 1 terrain | exit1terrain.b3d
     - [] Room fan | fan.b3d
     - [] SCP-008 Lid | 008_2.b3d
-    - [] SCP-079 | 079.b3d
+    - [x] SCP-079 | 079.b3d
     - [] ??? | 173_2.b3d.001
     - [] ??? | 372_hb.b3d
     - [] ??? | 1123_hb.b3d

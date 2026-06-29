@@ -1626,6 +1626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   walkingSpeed: 2
   runningSpeed: 10
+  turningSpeed: 1.51
 --- !u!54 &2070635570
 Rigidbody:
   m_ObjectHideFlags: 0

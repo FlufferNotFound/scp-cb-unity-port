@@ -405,10 +405,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartUpVideoPlayer
   videoSequences:
-  - videoClip: {fileID: 32900000, guid: f1607bf39cc21f54a837c9ed28fa196c, type: 3}
-    audioClip: {fileID: 8300000, guid: a03dd4a27bff58d4fae59b86417da723, type: 3}
   - videoClip: {fileID: 32900000, guid: f2f386fb805f8b841b7994ba5b6c9fde, type: 3}
     audioClip: {fileID: 8300000, guid: 4cfbfa5ae54b70d42a9b1df2e3a0464f, type: 3}
+  - videoClip: {fileID: 32900000, guid: f1607bf39cc21f54a837c9ed28fa196c, type: 3}
+    audioClip: {fileID: 8300000, guid: a03dd4a27bff58d4fae59b86417da723, type: 3}
 --- !u!1 &430145594
 GameObject:
   m_ObjectHideFlags: 0

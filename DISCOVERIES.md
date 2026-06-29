@@ -4,7 +4,7 @@ Follow this format when putting stuff here.
 
 ---
 
-#### YYYY-MM-DD
+#### YYYY-MM-DD :
 
 Put whatever you discover here.\
 
@@ -91,11 +91,39 @@ The armature has a lot of duplicate bones in the arm and root, third spine, not 
 
 ---
 
-#### 2026-06-222
+#### 2026-06-22
 
 ~~While working on the Class-D's model I noticed it uses the same mesh as 035, and so does more characters.~~
 ~~This means I can just re use the same mesh and call it a day.~~
 
 Nvm, the model may "be" the same but the UVs are different.
 
+Also, while working on the zombie surgeon, all models are _no_name_ bones and a lot of tiny bones that don't serve a use.
+
 **FlufferNotFound**
+
+---
+
+#### 2026-06-27
+
+The MTF's model has the P90 built in, as in it's part of the same mesh.
+Also, not to discredit the original modeller of this model, the MTF's topology
+is a bit messy in certain areas.
+
+And just like other characters, there's tons of bones that serve no purpose.
+
+---
+
+The topology in Clerk's model is the messiest I've seen so far... hopefully it's just this one.
+
+**FlufferNotFound**
+
+---
+
+#### 2026-06-28
+
+SCP-079's model has plenty of modelled details, like individual keys on the keyboard, batteries, etc..
+
+**FlufferNotFound**
+
+---
