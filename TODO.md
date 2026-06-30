@@ -27,9 +27,9 @@ or that are empty.
     - [] ??? | bll.b3d
     - [x] Class-D | classd.b3d
     - [x] NPC | clerk.b3d
-    - [] Duck | duck_low_res.b3d
+    - [x] Duck | duck_low_res.b3d
     - [] Forest monster | forestmonster.b3d
-    - [] Guard | guard.b3d
+    - [-] Guard | guard.b3d
     - [x] MTF | MTF2.b3d
     - [x] SCP-035 | 035.b3d
     - [] SCP-035 Tentacle | 035tentacle.b3d
@@ -39,16 +39,16 @@ or that are empty.
     - [] Apache helicopter | apacherotor2.b3d
     - [] Apache helicopter | apacherotor.b3d
     - [] Apache helicopter | apache.b3d
-    - [] SCP-173 Box | 173box.b3d
+    - [x] SCP-173 Box | 173box.b3d
     - [] Light cone | lightcone.b3d
     - [] Keys | key.b3d
     - [] NVGs | NVG.b3d
-    - [] Origami | origami.b3d
-    - [] SCP-500 | pill.b3d
+    - [x] Origami | origami.b3d
+    - [x] SCP-500 | pill.b3d
     - [] SCP-1499 | SCP-1499.b3d
     - [] SCP-714 | scp714.b3d
     - [] SCP-1025 | scp1025.b3d
-    - [] SCP-Severed hand | severedhand.b3d
+    - [x] SCP-Severed hand | severedhand.b3d
     - [] Wallet | wallet.b3d
     - [] Eyedrops | eyedrops.b3d
     - [] Gas mask | gasmask.b3d
@@ -56,7 +56,7 @@ or that are empty.
     - [] ??? | HGIB_Skull1.b3d
     - [] SCP-427 | 427.b3d
     - [] Clipboard | clipboard.b3d
-    - [] Syringe | syringe.b3d
+    - [x] Syringe | syringe.b3d
     - [] Room | room3storage_hb.b3d
     - [] Room | room3z2_hb.b3d
     - [] Room | room2tesla_caution.b3d

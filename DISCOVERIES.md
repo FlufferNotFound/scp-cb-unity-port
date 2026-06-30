@@ -127,3 +127,15 @@ SCP-079's model has plenty of modelled details, like individual keys on the keyb
 **FlufferNotFound**
 
 ---
+
+#### 2026-06-29
+
+Origami nothing special.
+
+Severed hand has an armature bone that serves no purpose, removed.
+
+SCP-500 was the eassiest model to port, just had to edit the material, remove intersecting verts and voila!
+
+**FlufferNotFound**
+
+---
