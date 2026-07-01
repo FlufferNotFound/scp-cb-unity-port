@@ -51,8 +51,8 @@ or that are empty.
     - [x] SCP-Severed hand | severedhand.b3d
     - [] Wallet | wallet.b3d
     - [] Eyedrops | eyedrops.b3d
-    - [] Gas mask | gasmask.b3d
-    - [] Hazmat suit | hazmat.b3d
+    - [x] Gas mask | gasmask.b3d
+    - [x] Hazmat suit | hazmat.b3d
     - [] ??? | HGIB_Skull1.b3d
     - [] SCP-427 | 427.b3d
     - [] Clipboard | clipboard.b3d

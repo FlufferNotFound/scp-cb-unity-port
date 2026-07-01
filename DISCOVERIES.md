@@ -139,3 +139,14 @@ SCP-500 was the eassiest model to port, just had to edit the material, remove in
 **FlufferNotFound**
 
 ---
+
+#### 2026-07-01
+
+All armatures have bones named no_name that servere no purpose.
+I won't ask, why they were added, but most likely to make the model difficult to work with, idk.
+
+Nothing interesting in the Hazmat suit.
+
+**FlufferNotFound**
+
+---
