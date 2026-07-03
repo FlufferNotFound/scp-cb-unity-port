@@ -1,11 +1,9 @@
----
-
 From initial observation, there's models that won't be used
 or that are empty.
 
 - Prepare models for export to Unity
   - [ ] Blitz3D Models
-    - [] German officer | naziofficer.b3d
+    - [x] German officer | naziofficer.b3d
     - [] "s2" | s2.b3d
     - [] SCP-049 | scp-049.b3d
     - [] SCP-066 | scp-066.b3d
@@ -41,8 +39,8 @@ or that are empty.
     - [] Apache helicopter | apache.b3d
     - [x] SCP-173 Box | 173box.b3d
     - [] Light cone | lightcone.b3d
-    - [] Keys | key.b3d
-    - [] NVGs | NVG.b3d
+    - [x] Keys | key.b3d
+    - [x] NVGs | NVG.b3d
     - [x] Origami | origami.b3d
     - [x] SCP-500 | pill.b3d
     - [] SCP-1499 | SCP-1499.b3d

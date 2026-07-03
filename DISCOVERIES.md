@@ -150,3 +150,13 @@ Nothing interesting in the Hazmat suit.
 **FlufferNotFound**
 
 ---
+
+#### 2026-07-01
+
+Nothing much noting on the NVGs, just the topology is a bit messy.
+
+The most armatures have a bone named 'FIRESPOT'. I have no clue what this bones does, and there's no reference to it in the og game's src.
+
+**FlufferNotFound**
+
+---
