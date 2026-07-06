@@ -157,6 +157,59 @@ Nothing much noting on the NVGs, just the topology is a bit messy.
 
 The most armatures have a bone named 'FIRESPOT'. I have no clue what this bones does, and there's no reference to it in the og game's src.
 
+---
+
+There's two 1048's models, scp-1048.b3d and scp-1048pp.b3d. Only difference is that pp has the drawing paper, but other one doesn't.
+
+1048's model is split into multiple parts for its body.
+
+**FlufferNotFound**
+
+---
+
+#### 2026-07-03
+
+SCP-1048A has two materials, one for the body and another one for the bowtie.
+The bowtie material uses 1048's texture.
+
+**FlufferNotFound**
+
+---
+
+#### 2026-07-04
+
+SCP-096 armature instead of bones, his armature was imported as a ton of empty objects, dunno why.
+
+The empty axis objects are parented to his mesh, but EVERY empty axis is parented in a weird way I call the tower of Scene_Root hell
+
+096's mesh isn't perefectly symmetric, but given that it's very complex, i'm not gonna symmetrize it. Just add some bones and call it a day.
+
+**FlufferNotFound**
+
+---
+
+#### 2026-07-05
+
+For some reason, a lot of the Blitz3D have armatures built in with no bones or puporse.
+The freaking wallet has an armature, for what?
+
+**FlufferNotFound**
+
+---
+
+#### 2026-07-06
+
+Nothing interesting on SCP-1123 but 427 is something else...
+the topology on the decour is high quality topology gore content...
+
+---
+
+scp-066.b3d contains more than just eric's toy, it also has 049's model, FOR SOME REASON WTF.
+
+066's model has two materials, Material_001\_\_new066-2_1\_\_jpg and Material_001\_\_066_baketest2, both are the same.
+
+066 has an armature, keeping it.
+
 **FlufferNotFound**
 
 ---

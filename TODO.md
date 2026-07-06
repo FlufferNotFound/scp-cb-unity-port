@@ -1,19 +1,24 @@
 From initial observation, there's models that won't be used
 or that are empty.
 
+X is for models that are ready and ported to Unity.
+/ is for models that are ready but not ported to Unity.
+~ is for models that are in progress.
+! is for models that won't be included.
+
 - Prepare models for export to Unity
   - [ ] Blitz3D Models
     - [x] German officer | naziofficer.b3d
     - [] "s2" | s2.b3d
     - [] SCP-049 | scp-049.b3d
-    - [] SCP-066 | scp-066.b3d
+    - [~] SCP-066 | scp-066.b3d
     - [] SCP-939 | scp-939.b3d
     - [] SCP-966 | scp-966.b3d
-    - [] SCP-1048 | scp-1048.b3d
-    - [] SCP-1024-A | scp-1048a.b3d
-    - [] SCP-1024-B | scp-1048pp.b3d
-    - [] SCP-096 | scp096.b3d
-    - [] SCP-049-2 | zombie1.b3d
+    - [x] SCP-1048 | scp-1048.b3d
+    - [x] SCP-1048-A | scp-1048a.b3d
+    - [!] SCP-1048 | scp-1048pp.b3d
+    - [~] SCP-096 | scp096.b3d
+    - [~] SCP-049-2 | zombie1.b3d
     - [x] SCP-008-2 | zombiesurgeon.b3d
     - [x] SCP-173 | 173_2.b3d
     - [] SCP-205-1 | 205_demon1.b3d
@@ -27,7 +32,7 @@ or that are empty.
     - [x] NPC | clerk.b3d
     - [x] Duck | duck_low_res.b3d
     - [] Forest monster | forestmonster.b3d
-    - [-] Guard | guard.b3d
+    - [~] Guard | guard.b3d
     - [x] MTF | MTF2.b3d
     - [x] SCP-035 | 035.b3d
     - [] SCP-035 Tentacle | 035tentacle.b3d
@@ -47,13 +52,13 @@ or that are empty.
     - [] SCP-714 | scp714.b3d
     - [] SCP-1025 | scp1025.b3d
     - [x] SCP-Severed hand | severedhand.b3d
-    - [] Wallet | wallet.b3d
-    - [] Eyedrops | eyedrops.b3d
+    - [x] Wallet | wallet.b3d
+    - [x] Eyedrops | eyedrops.b3d
     - [x] Gas mask | gasmask.b3d
     - [x] Hazmat suit | hazmat.b3d
-    - [] ??? | HGIB_Skull1.b3d
-    - [] SCP-427 | 427.b3d
-    - [] Clipboard | clipboard.b3d
+    - [x] SCP_1133 Skull | HGIB_Skull1.b3d
+    - [x] SCP-427 | 427.b3d
+    - [x] Clipboard | clipboard.b3d
     - [x] Syringe | syringe.b3d
     - [] Room | room3storage_hb.b3d
     - [] Room | room3z2_hb.b3d
