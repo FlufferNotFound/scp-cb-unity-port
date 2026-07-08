@@ -213,3 +213,23 @@ scp-066.b3d contains more than just eric's toy, it also has 049's model, FOR SOM
 **FlufferNotFound**
 
 ---
+
+#### 2026-07-06
+
+scp-066.b3d contains more than just eric's toy, it also has 049's model, FOR SOME REASON WTF.
+
+066's model has two materials, Material_001\_\_new066-2_1\_\_jpg and Material_001\_\_066_baketest2, both are the same.
+
+066 has an armature, keeping it.
+
+**FlufferNotFound**
+
+---
+
+#### 2026-07-07
+
+SCP-049's armature has the same issues as the other characters, intersecting bones that have no purpose.
+
+**FlufferNotFound**
+
+---

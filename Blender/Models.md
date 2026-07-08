@@ -1,0 +1,8 @@
+- Blitz_Models.blend
+- Stores models imported from Blitz3D files
+- DirectX_Models.blend
+- Stores models imported from DirectX files
+- RoomMesh_Models.blend
+- Stores models imported from RoomMesh file
+- SMF_Models.blend
+- Stores models imported from SMF files

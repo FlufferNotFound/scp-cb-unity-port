@@ -9,9 +9,9 @@ X is for models that are ready and ported to Unity.
 - Prepare models for export to Unity
   - [ ] Blitz3D Models
     - [x] German officer | naziofficer.b3d
-    - [] "s2" | s2.b3d
-    - [] SCP-049 | scp-049.b3d
-    - [~] SCP-066 | scp-066.b3d
+    - [x] Chaos insurgent | s2.b3d
+    - [x] SCP-049 | scp-049.b3d
+    - [x] SCP-066 | scp-066.b3d
     - [] SCP-939 | scp-939.b3d
     - [] SCP-966 | scp-966.b3d
     - [x] SCP-1048 | scp-1048.b3d
@@ -27,7 +27,7 @@ X is for models that are ready and ported to Unity.
     - [] SCP-205-4 | 205_woman.b3d
     - [] SCP-372 | 372.b3d
     - [] SCP-682 Arm | 682arm.b3d
-    - [] ??? | bll.b3d
+    - [] SCP-513 Entity | bll.b3d
     - [x] Class-D | classd.b3d
     - [x] NPC | clerk.b3d
     - [x] Duck | duck_low_res.b3d
@@ -35,7 +35,7 @@ X is for models that are ready and ported to Unity.
     - [~] Guard | guard.b3d
     - [x] MTF | MTF2.b3d
     - [x] SCP-035 | 035.b3d
-    - [] SCP-035 Tentacle | 035tentacle.b3d
+    - [~] SCP-035 Tentacle | 035tentacle.b3d
     - [x] SCP-106 | 106_2.b3d
     - [] SCP-1499-1 | 1499-1.b3d
     - [] Collider | doorhit.b3d
