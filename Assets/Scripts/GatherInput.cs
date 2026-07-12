@@ -27,6 +27,8 @@ public class GatherInput : MonoBehaviour
 
     private bool _consoleInteract;
 
+    private bool _anyKey;
+
     public float MovingDirection { get => _movingDirection; set => _movingDirection = value; }
 
     public float StrafingDirection { get => _strafingDirection; set => _strafingDirection = value; }
@@ -43,13 +45,21 @@ public class GatherInput : MonoBehaviour
 
     public bool IsCrouching { get => _isCrouching; set => _isCrouching = value; }
 
-    public bool IsInventoryInteract { get => _inventoryInteract; set => _inventoryInteract = value; }
+    public bool InventoryInteract { get => _inventoryInteract; set => _inventoryInteract = value; }
 
-    public bool IsConsoleInteract { get => _consoleInteract; set => _consoleInteract = value; }
+    public bool ConsoleInteract { get => _consoleInteract; set => _consoleInteract = value; }
+
+    public bool AnyKey { get => _anyKey; set => _consoleInteract = value; }
 
     private void Awake()
     {
         inputActions = new InputSystem_Actions();
+    }
+
+    private void Update()
+    {
+        Debug.Log("_anyKey:" + _anyKey);
+        //Debug.Log("AnyKey:" + AnyKey);
     }
 
     /*
@@ -89,6 +99,9 @@ public class GatherInput : MonoBehaviour
 
         inputActions.Player.MouseY.performed += StartMouseY;
         inputActions.Player.MouseY.canceled += StopMouseY;
+        
+        inputActions.Player.AnyKey.performed += StartAnyKey;
+        inputActions.Player.AnyKey.canceled += StopAnyKey;
 
         inputActions.Player.Enable();
     }
@@ -124,6 +137,9 @@ public class GatherInput : MonoBehaviour
 
         inputActions.Player.MouseY.performed += StartMouseY;
         inputActions.Player.MouseY.canceled += StopMouseY;
+
+        inputActions.Player.AnyKey.performed += StartAnyKey;
+        inputActions.Player.AnyKey.canceled += StopAnyKey;
 
         inputActions.Player.Disable();
     }
@@ -222,5 +238,13 @@ public class GatherInput : MonoBehaviour
 
     private void StopMouseY(InputAction.CallbackContext context) {
         _mouseY = 0;
+    }
+
+    private void StartAnyKey(InputAction.CallbackContext context) {
+        _anyKey = true;
+    }
+
+    private void StopAnyKey(InputAction.CallbackContext context) {
+        _anyKey = false;
     }
 }

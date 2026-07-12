@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 330585547}
   - component: {fileID: 330585550}
   - component: {fileID: 330585549}
+  - component: {fileID: 330585552}
   - component: {fileID: 330585551}
   m_Layer: 0
   m_Name: Main Camera
@@ -209,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -375,11 +376,11 @@ VideoPlayer:
   m_RenderMode: 0
   m_AspectRatio: 2
   m_DataSource: 0
-  m_TimeUpdateMode: 2
+  m_TimeUpdateMode: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
-  - {fileID: 0}
+  - {fileID: 330585549}
   m_DirectAudioVolumes:
   - 1
   m_Url: 
@@ -405,10 +406,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartUpVideoPlayer
   videoSequences:
-  - videoClip: {fileID: 32900000, guid: f2f386fb805f8b841b7994ba5b6c9fde, type: 3}
-    audioClip: {fileID: 8300000, guid: 4cfbfa5ae54b70d42a9b1df2e3a0464f, type: 3}
-  - videoClip: {fileID: 32900000, guid: f1607bf39cc21f54a837c9ed28fa196c, type: 3}
+  - videoClip: {fileID: 32900000, guid: 4fc6b9698962b6d4898b255678802780, type: 3}
     audioClip: {fileID: 8300000, guid: a03dd4a27bff58d4fae59b86417da723, type: 3}
+  - videoClip: {fileID: 32900000, guid: 3a385d7fe239e054e9da2b97d8766202, type: 3}
+    audioClip: {fileID: 8300000, guid: 4cfbfa5ae54b70d42a9b1df2e3a0464f, type: 3}
+  - videoClip: {fileID: 32900000, guid: 62bbe617dc84b054887546bccf173972, type: 3}
+    audioClip: {fileID: 8300000, guid: 4cfbfa5ae54b70d42a9b1df2e3a0464f, type: 3}
+--- !u!114 &330585552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119589ba3c7245347973ee22eba3e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GatherInput
 --- !u!1 &430145594
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,7 +27,7 @@ X is for models that are ready and ported to Unity.
     - [] SCP-205-4 | 205_woman.b3d
     - [] SCP-372 | 372.b3d
     - [] SCP-682 Arm | 682arm.b3d
-    - [] SCP-513 Entity | bll.b3d
+    - [x] SCP-513 Ghost | bll.b3d
     - [x] Class-D | classd.b3d
     - [x] NPC | clerk.b3d
     - [x] Duck | duck_low_res.b3d
@@ -35,7 +35,7 @@ X is for models that are ready and ported to Unity.
     - [~] Guard | guard.b3d
     - [x] MTF | MTF2.b3d
     - [x] SCP-035 | 035.b3d
-    - [~] SCP-035 Tentacle | 035tentacle.b3d
+    - [x] SCP-035 Tentacle | 035tentacle.b3d
     - [x] SCP-106 | 106_2.b3d
     - [] SCP-1499-1 | 1499-1.b3d
     - [] Collider | doorhit.b3d
@@ -120,3 +120,180 @@ X is for models that are ready and ported to Unity.
     - [] Rock 2 | rock2.b3d
     - [] Tree 1 | treetest4.b3d
     - [] Tree 2 | treetest5.b3d
+
+  - [ ] DirectX Models
+    - [ ] N/A | 420.x
+    - [ ] N/A | 513.x
+    - [ ] N/A | badge.x
+    - [ ] N/A | cup.x
+    - [ ] N/A | cupliquid.x
+    - [ ] N/A | electronics.x
+    - [ ] N/A | firstaid.x
+    - [ ] N/A | keycard.x
+    - [ ] N/A | metalpanel.x
+    - [ ] N/A | navigator.x
+    - [ ] N/A | note.x
+    - [ ] N/A | paper.x
+    - [ ] N/A | paperstrips.x
+    - [ ] N/A | radio.x
+    - [ ] N/A | scp148.x
+    - [ ] N/A | vest.x
+    - [ ] N/A | 294.x
+    - [ ] N/A | 914key.x
+    - [ ] N/A | 914knob.x
+    - [ ] N/A | Button.x
+    - [ ] N/A | ButtonCode.x
+    - [ ] N/A | ButtonKeycard.x
+    - [ ] N/A | ButtonScanner.x
+    - [ ] N/A | cam.x
+    - [ ] N/A | cambase.x
+    - [ ] N/A | CamHead.x
+    - [ ] N/A | ContDoorLeft.x
+    - [ ] N/A | ContDoorRight.x
+    - [ ] N/A | Door01.x
+    - [ ] N/A | DoorColl.x
+    - [ ] N/A | DoorFrame.x
+    - [ ] N/A | heavydoor1.x
+    - [ ] N/A | heavydoor2.x
+    - [ ] N/A | leverbase.x
+    - [ ] N/A | leverhandle.x
+    - [ ] N/A | monitor.x
+    - [ ] N/A | 205.x
+    - [ ] N/A | boxfile_a.x
+    - [ ] N/A | boxfile_b.x
+    - [ ] N/A | cabinet_a.x
+    - [ ] N/A | cabinet_b.x
+    - [ ] N/A | ContDoorFrame.x
+    - [ ] N/A | crate1.x
+    - [ ] N/A | crate2.x
+    - [ ] N/A | crate3.x
+    - [ ] N/A | ElecBox.x
+    - [ ] N/A | keyboard.x
+    - [ ] N/A | lamp1.x
+    - [ ] N/A | lamp2.x
+    - [ ] N/A | lamp3.x
+    - [ ] N/A | monitor.x
+    - [ ] N/A | mug.x
+    - [ ] N/A | officeseat_a.x
+    - [ ] N/A | Tank1.x
+    - [ ] N/A | Tank2.x
+    - [ ] N/A | Battery.x
+
+  - [ ] RoomMesh Models
+    - [ ] N/A | 008_opt.rmesh
+    - [ ] N/A | 1123_opt.rmesh
+    - [ ] N/A | 173.rmesh
+    - [ ] N/A | 173bright.rmesh
+    - [ ] N/A | 173bright_opt.rmesh
+    - [ ] N/A | 173_opt.rmesh
+    - [ ] N/A | 4tunnels.rmesh
+    - [ ] N/A | 4tunnels_opt.rmesh
+    - [ ] N/A | checkpoint1_opt.rmesh
+    - [ ] N/A | checkpoint2_opt.rmesh
+    - [ ] N/A | coffin_opt.rmesh
+    - [ ] N/A | dimension1499_opt.rmesh
+    - [ ] N/A | endroom2_opt.rmesh
+    - [ ] N/A | endroom_opt.rmesh
+    - [ ] N/A | exit1_opt.rmesh
+    - [ ] N/A | gateaentrance_opt.rmesh
+    - [ ] N/A | gatea_opt.rmesh
+    - [ ] N/A | lockroom2_opt.rmesh
+    - [ ] N/A | lockroom3_opt.rmesh
+    - [ ] N/A | lockroom_opt.rmesh
+    - [ ] N/A | machineroom_opt.rmesh
+    - [ ] N/A | medibay_opt.rmesh
+    - [ ] N/A | mt1.rmesh
+    - [ ] N/A | mt2.rmesh
+    - [ ] N/A | mt2c.rmesh
+    - [ ] N/A | mt3.rmesh
+    - [ ] N/A | mt4.rmesh
+    - [ ] N/A | mt_elevator.rmesh
+    - [ ] N/A | mt_generator.rmesh
+    - [ ] N/A | pocketdimension1_opt.rmesh
+    - [ ] N/A | room012_opt.rmesh
+    - [ ] N/A | room035_opt.rmesh
+    - [ ] N/A | room049_opt.rmesh
+    - [ ] N/A | room079_opt.rmesh
+    - [ ] N/A | room106_opt.rmesh
+    - [ ] N/A | room1162_opt.rmesh
+    - [ ] N/A | room1archive.rmesh
+    - [ ] N/A | room1archive_opt.rmesh
+    - [ ] N/A | room1lifts_opt.rmesh
+    - [ ] N/A | room2.rmesh
+    - [ ] N/A | room205.rmesh
+    - [ ] N/A | room205_opt.rmesh
+    - [ ] N/A | room2c2_opt.rmesh
+    - [ ] N/A | room2cafeteria_opt.rmesh
+    - [ ] N/A | room2ccont_opt.rmesh
+    - [ ] N/A | room2closets_opt.rmesh
+    - [ ] N/A | room2cpit_opt.rmesh
+    - [ ] N/A | room2Ctunnel_opt.rmesh
+    - [ ] N/A | room2Cz3_opt.rmesh
+    - [ ] N/A | room2C_opt.rmesh
+    - [ ] N/A | room2doors_opt.rmesh
+    - [ ] N/A | room2elevator_opt.rmesh
+    - [ ] N/A | room2gw_b_opt.rmesh
+    - [ ] N/A | room2gw_opt.rmesh
+    - [ ] N/A | room2nuke_opt.rmesh
+    - [ ] N/A | room2offices2_opt.rmesh
+    - [ ] N/A | room2offices3_opt.rmesh
+    - [ ] N/A | room2offices4_opt.rmesh
+    - [ ] N/A | room2offices_opt.rmesh
+    - [ ] N/A | room2pipes2_opt.rmesh
+    - [ ] N/A | room2pipes_opt.rmesh
+    - [ ] N/A | room2pit_opt.rmesh
+    - [ ] N/A | room2poffices2_opt.rmesh
+    - [ ] N/A | room2poffices_opt.rmesh
+    - [ ] N/A | room2scps2_opt.rmesh
+    - [ ] N/A | room2scps_opt.rmesh
+    - [ ] N/A | room2servers2_opt.rmesh
+    - [ ] N/A | room2servers_opt.rmesh
+    - [ ] N/A | room2shaft_opt.rmesh
+    - [ ] N/A | room2sl_opt.rmesh
+    - [ ] N/A | room2sroom_opt.rmesh
+    - [ ] N/A | room2storage_opt.rmesh
+    - [ ] N/A | room2tesla_hcz_opt.rmesh
+    - [ ] N/A | room2tesla_lcz_opt.rmesh
+    - [ ] N/A | room2tesla_opt.rmesh
+    - [ ] N/A | room2test1074.rmesh
+    - [ ] N/A | room2test1074_opt.rmesh
+    - [ ] N/A | room2testroom2_opt.rmesh
+    - [ ] N/A | room2toilets_opt.rmesh
+    - [ ] N/A | room2tunnel_opt.rmesh
+    - [ ] N/A | room2z3_2_opt.rmesh
+    - [ ] N/A | room2z3_opt.rmesh
+    - [ ] N/A | room2_2_opt.rmesh
+    - [ ] N/A | room2_3_opt.rmesh
+    - [ ] N/A | room2_4_opt.rmesh
+    - [ ] N/A | room2_5_opt.rmesh
+    - [ ] N/A | room2_opt.rmesh
+    - [ ] N/A | room3gw_opt.rmesh
+    - [ ] N/A | room3offices_opt.rmesh
+    - [ ] N/A | room3pit_opt.rmesh
+    - [ ] N/A | room3servers2_opt.rmesh
+    - [ ] N/A | room3servers_opt.rmesh
+    - [ ] N/A | room3storage_opt.rmesh
+    - [ ] N/A | room3tunnel_opt.rmesh
+    - [ ] N/A | room3z2_opt.rmesh
+    - [ ] N/A | room3z3_opt.rmesh
+    - [ ] N/A | room3_2_opt.rmesh
+    - [ ] N/A | room3_3_opt.rmesh
+    - [ ] N/A | room3_opt.rmesh
+    - [ ] N/A | room4info_opt.rmesh
+    - [ ] N/A | room4pit_opt.rmesh
+    - [ ] N/A | room4z3_opt.rmesh
+    - [ ] N/A | room4_2_opt.rmesh
+    - [ ] N/A | room4_opt.rmesh
+    - [ ] N/A | room513_opt.rmesh
+    - [ ] N/A | room860_opt.rmesh
+    - [ ] N/A | room966.rmesh
+    - [ ] N/A | room966_opt.rmesh
+    - [ ] N/A | roompj_opt.rmesh
+    - [ ] N/A | testroom_opt.rmesh
+    - [ ] N/A | tunnel2_opt.rmesh
+    - [ ] N/A | tunnel_opt.rmesh
+    - [ ] N/A | 1499object0_opt.rmesh
+
+  - [ ] SMF Models
+    - [ ] N/A | toilet02.smf
+    - [ ] N/A | bathroomsinks.smf

@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         
-        Debug.Log("MouseX: " + gatherInput.MouseX);
+        //Debug.Log("MouseX: " + gatherInput.MouseX);
 
         //gameObject.transform.Rotate(0f, gatherInput.MouseX * turningSpeed, 0f);
 

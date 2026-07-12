@@ -233,3 +233,31 @@ SCP-049's armature has the same issues as the other characters, intersecting bon
 **FlufferNotFound**
 
 ---
+
+#### 2026-07-11
+
+Unity throws an error when importing fcveny.ogg.
+At first I didn't know why and after a lil investigation with ffprobe, turns out the audio is corrupted or something.
+
+[ogg @ 0000029b4b6af7c0] Format ogg detected only with low score of 1, misdetection possible!
+
+[ogg @ 0000029b4b6af7c0] CRC mismatch!
+
+    Last message repeated 1 times
+
+[ogg @ 0000029b4b6af7c0] Header processing failed: Invalid data found when processing input
+
+.\fcveny.ogg: Invalid data found when processing input
+
+I tried importing the file into audacity but it didn't work on the first try, so I imported it as raw data.
+Then I thought, if the audio is corrupted, then exporting it again should fix the issue, and it did.
+
+---
+
+Files that have any of these extensions: .pt, .pd, .s, .sc, .it are just jpgs under disguise.
+
+---
+
+All audio and texture files have been imported to Unity. Just need to work on the 3D models.
+
+**FlufferNotFound**

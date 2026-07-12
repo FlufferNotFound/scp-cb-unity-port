@@ -45,6 +45,9 @@ public class StartUpVideoPlayer : MonoBehaviour
     [HideInInspector]
     private AudioSource audioSource;
 
+    [HideInInspector]
+    private GatherInput gatherInput;
+
     private void Awake()
     {
         //Check if scene controller exists
@@ -65,6 +68,7 @@ public class StartUpVideoPlayer : MonoBehaviour
             sceneController.LoadSceneByName("Menu");
         }
 
+        gatherInput = GetComponent<GatherInput>();
         videoPlayer = GetComponent<VideoPlayer>();
         audioSource = GetComponent<AudioSource>();
 
@@ -82,6 +86,9 @@ public class StartUpVideoPlayer : MonoBehaviour
         videoPlayer.waitForFirstFrame = true;
         videoPlayer.isLooping = false;
         videoPlayer.skipOnDrop = false;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         StartCoroutine(PlayVideoSequence());
     }
@@ -118,16 +125,27 @@ public class StartUpVideoPlayer : MonoBehaviour
             while (videoPlayer.isPlaying)
             {
                 yield return null;
+
+                if (gatherInput.AnyKey)
+                {
+                    gatherInput.AnyKey = false;
+
+                    break;
+                }
             }
 
             videoPlayer.Stop();
             audioSource.Pause();
-
-            videoPlayer = null;
-            audioSource = null;
         }
 
         sceneController.LoadSceneByName("Menu");
+    }
 
+    private void OnDestroy()
+    {
+        videoPlayer.clip = null;
+        audioSource.clip = null;
+
+        StopCoroutine(PlayVideoSequence());
     }
 }

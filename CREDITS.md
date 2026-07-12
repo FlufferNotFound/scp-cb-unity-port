@@ -139,3 +139,4 @@ Thank you for bringing us this wonderful horror experience :)!
   - Izumi Kato - "Untitled 2004" sculpture, used for SCP-173's article and as model reference.
   - "joric" - Blitz3D Import/Export tool. https://github.com/joric/io_scene_b3d
   - Alex, "GreenXenith" - Blitz3D Import/Export tool. https://github.com/GreenXenith/io_scene_b3d
+  - "yasirkula" - Duplicate asset detector, licensed under The MIT License. https://gist.github.com/yasirkula/f96802da4cf6f5fbb0c76d8322463a88

@@ -34,3 +34,7 @@ Not only that, it’s stuck on Windows, which many have or plan on hopping off d
 
 Money was never the reason I planned on doing this project.
 The og is free, and this one shall be free too.
+
+## Why is this taking so long?
+
+I'm doing this on my free time, and also keep in mind as of writing I'm studying for my engineering degree.
