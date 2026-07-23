@@ -261,3 +261,74 @@ Files that have any of these extensions: .pt, .pd, .s, .sc, .it are just jpgs un
 All audio and texture files have been imported to Unity. Just need to work on the 3D models.
 
 **FlufferNotFound**
+
+---
+
+#### 2026-07-13
+
+The guards armature is weird.
+
+The rocks have armature bones. May I ask why?
+
+Even the trees have bones, wtf.
+
+**FlufferNotFound**
+
+---
+
+#### 2026-07-13
+
+I tried looking for a replacement for DS-Digital but couldn't find any, thankfully the font is under a Shareware license.
+
+**FlufferNotFound**
+
+---
+
+#### 2026-07-18
+
+Textures 294.png and 294test.png are the same same texture, there's no difference between the two.
+
+**FlufferNotFound**
+
+---
+
+#### 2026-07-20
+
+SCP-294's model has a lot of modelled details, like a keyboard, drink dispencer, etc...
+
+---
+
+The keycard model was made in a editor that uses brushes, like hammer editor, so to speak...
+
+---
+
+These materials in SCP-939, Material_004\_\_939_extremities and scp-939_licker_extremities2 have share the same texture.
+
+**FlufferNotFound**
+
+---
+
+#### 2026-07-22
+
+SCP-966 texture has D-9341's reflection in the pupils.
+
+Like some other models, the armature is not made of bones, rather empty objects.
+
+---
+
+The models for SCP-205 have some interesting names, the og's devs new people would be poking around the game files.
+
+205_demon1.b3d - "look behind you"
+205_demon2.b3d - "these arent the decompile your looking for"
+205_demon3.b3d - "If your reading this your already dead"
+205_woman.b3d - "you could of saved her"
+
+---
+
+SCP-860's monster has this name
+
+forestmonster.b3d - "regalis'\_mom_lol"
+
+it also has a bone named "kenneth"
+
+**FlufferNotFound**

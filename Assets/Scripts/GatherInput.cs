@@ -56,12 +56,6 @@ public class GatherInput : MonoBehaviour
         inputActions = new InputSystem_Actions();
     }
 
-    private void Update()
-    {
-        Debug.Log("_anyKey:" + _anyKey);
-        //Debug.Log("AnyKey:" + AnyKey);
-    }
-
     /*
      * This is how my teacher taught us to do inputs.
      * ngl, I don't like how it looks but I've used this 

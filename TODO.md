@@ -12,38 +12,38 @@ X is for models that are ready and ported to Unity.
     - [x] Chaos insurgent | s2.b3d
     - [x] SCP-049 | scp-049.b3d
     - [x] SCP-066 | scp-066.b3d
-    - [] SCP-939 | scp-939.b3d
-    - [] SCP-966 | scp-966.b3d
+    - [x] SCP-939 | scp-939.b3d
+    - [x] SCP-966 | scp-966.b3d
     - [x] SCP-1048 | scp-1048.b3d
     - [x] SCP-1048-A | scp-1048a.b3d
     - [!] SCP-1048 | scp-1048pp.b3d
     - [~] SCP-096 | scp096.b3d
-    - [~] SCP-049-2 | zombie1.b3d
+    - [x] SCP-049-2 | zombie1.b3d
     - [x] SCP-008-2 | zombiesurgeon.b3d
     - [x] SCP-173 | 173_2.b3d
-    - [] SCP-205-1 | 205_demon1.b3d
-    - [] SCP-205-2 | 205_demon2.b3d
-    - [] SCP-205-3 | 205_demon3.b3d
-    - [] SCP-205-4 | 205_woman.b3d
-    - [] SCP-372 | 372.b3d
+    - [x] SCP-205-1 | 205_demon1.b3d
+    - [x] SCP-205-2 | 205_demon2.b3d
+    - [x] SCP-205-3 | 205_demon3.b3d
+    - [x] SCP-205-4 | 205_woman.b3d
+    - [!] SCP-372 | 372.b3d //Model is messed up.
     - [] SCP-682 Arm | 682arm.b3d
     - [x] SCP-513 Ghost | bll.b3d
     - [x] Class-D | classd.b3d
     - [x] NPC | clerk.b3d
     - [x] Duck | duck_low_res.b3d
-    - [] Forest monster | forestmonster.b3d
-    - [~] Guard | guard.b3d
+    - [x] Forest monster | forestmonster.b3d
+    - [x] Guard | guard.b3d
     - [x] MTF | MTF2.b3d
     - [x] SCP-035 | 035.b3d
     - [x] SCP-035 Tentacle | 035tentacle.b3d
     - [x] SCP-106 | 106_2.b3d
     - [] SCP-1499-1 | 1499-1.b3d
-    - [] Collider | doorhit.b3d
-    - [] Apache helicopter | apacherotor2.b3d
-    - [] Apache helicopter | apacherotor.b3d
-    - [] Apache helicopter | apache.b3d
+    - [!] Collider | doorhit.b3d
+    - [x] Apache helicopter | apacherotor2.b3d
+    - [x] Apache helicopter | apacherotor.b3d
+    - [x] Apache helicopter | apache.b3d
     - [x] SCP-173 Box | 173box.b3d
-    - [] Light cone | lightcone.b3d
+    - [x] Light cone | lightcone.b3d
     - [x] Keys | key.b3d
     - [x] NVGs | NVG.b3d
     - [x] Origami | origami.b3d
@@ -87,7 +87,7 @@ X is for models that are ready and ported to Unity.
     - [] Drawers | IntroDrawer.b3d
     - [] HID Gun | lightgun.b3d
     - [] HID Gun base | lightgunbase.b3d
-    - [] Elevator door | elevatordoor.b3d
+    - [~] Elevator door | elevatordoor.b3d
     - [] Exit 1 terrain | exit1terrain.b3d
     - [] Room fan | fan.b3d
     - [] SCP-008 Lid | 008_2.b3d
@@ -113,23 +113,23 @@ X is for models that are ready and ported to Unity.
     - [] ??? | 1499object14.b3d
     - [] ??? | 1499object15.b3d
     - [] ??? | 1499plane.b3d
-    - [] Door | door.b3d
-    - [] Door frame | door_frame.b3d
+    - [x] Door | door.b3d
+    - [x] Door frame | door_frame.b3d
     - [] Wall | wall.b3d
-    - [] Rock 1 | rock.b3d
-    - [] Rock 2 | rock2.b3d
-    - [] Tree 1 | treetest4.b3d
+    - [x] Rock 1 | rock.b3d
+    - [x] Rock 2 | rock2.b3d
+    - [x] Tree 1 | treetest4.b3d
     - [] Tree 2 | treetest5.b3d
 
   - [ ] DirectX Models
-    - [ ] N/A | 420.x
-    - [ ] N/A | 513.x
+    - [x] N/A | 420.x
+    - [x] N/A | 513.x
     - [ ] N/A | badge.x
-    - [ ] N/A | cup.x
-    - [ ] N/A | cupliquid.x
+    - [x] N/A | cup.x
+    - [x] N/A | cupliquid.x
     - [ ] N/A | electronics.x
     - [ ] N/A | firstaid.x
-    - [ ] N/A | keycard.x
+    - [x] N/A | keycard.x
     - [ ] N/A | metalpanel.x
     - [ ] N/A | navigator.x
     - [ ] N/A | note.x
@@ -138,7 +138,7 @@ X is for models that are ready and ported to Unity.
     - [ ] N/A | radio.x
     - [ ] N/A | scp148.x
     - [ ] N/A | vest.x
-    - [ ] N/A | 294.x
+    - [x] N/A | 294.x
     - [ ] N/A | 914key.x
     - [ ] N/A | 914knob.x
     - [ ] N/A | Button.x
@@ -177,7 +177,7 @@ X is for models that are ready and ported to Unity.
     - [ ] N/A | officeseat_a.x
     - [ ] N/A | Tank1.x
     - [ ] N/A | Tank2.x
-    - [ ] N/A | Battery.x
+    - [x] Battery models | Battery.x
 
   - [ ] RoomMesh Models
     - [ ] N/A | 008_opt.rmesh

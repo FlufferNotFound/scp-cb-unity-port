@@ -1,0 +1,29 @@
+[
+    {
+        "DrinkName": [
+            "Example drink"
+        ],
+        "RGBA": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "Emissive": true,
+        "DrinkSound": "",
+        "DispenseSound": "",
+        "IsDeadly": true,
+        "DeathMessage": "Subject D-9341 found dead in [REDACTED]. Cause of death unknown.",
+        "BlurTime": 5,
+        "DrinkMessage": "Quite tasteful.",
+        "DamageAmount": -1.5,
+        "Bloodloss": -4,
+        "Stomachache": true,
+        "StaminaEffectT": 6,
+        "StaminaEffectTimer": 125,
+        "BlinkEffect": 6,
+        "BlinkEffectTimer": 350,
+        "DeathTimer": 5,
+        "Explosion": true
+    }
+]

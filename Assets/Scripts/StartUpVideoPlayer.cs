@@ -122,29 +122,33 @@ public class StartUpVideoPlayer : MonoBehaviour
                 audioSource.Play();
             }
 
-            while (videoPlayer.isPlaying)
+            while (videoPlayer.isPlaying && !gatherInput.AnyKey)
             {
                 yield return null;
-
-                if (gatherInput.AnyKey)
-                {
-                    gatherInput.AnyKey = false;
-
-                    break;
-                }
             }
 
             videoPlayer.Stop();
             audioSource.Pause();
+
+            videoPlayer.clip = null;
+            audioSource.clip = null;
+
+            gatherInput.AnyKey = false;
         }
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
         sceneController.LoadSceneByName("Menu");
     }
 
     private void OnDestroy()
     {
-        videoPlayer.clip = null;
-        audioSource.clip = null;
+            videoPlayer.Stop();
+            audioSource.Pause();
+
+            videoPlayer.clip = null;
+            audioSource.clip = null;
 
         StopCoroutine(PlayVideoSequence());
     }

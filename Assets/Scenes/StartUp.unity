@@ -378,7 +378,7 @@ VideoPlayer:
   m_DataSource: 0
   m_TimeUpdateMode: 1
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
+  m_AudioOutputMode: 1
   m_TargetAudioSources:
   - {fileID: 330585549}
   m_DirectAudioVolumes:
@@ -411,7 +411,7 @@ MonoBehaviour:
   - videoClip: {fileID: 32900000, guid: 3a385d7fe239e054e9da2b97d8766202, type: 3}
     audioClip: {fileID: 8300000, guid: 4cfbfa5ae54b70d42a9b1df2e3a0464f, type: 3}
   - videoClip: {fileID: 32900000, guid: 62bbe617dc84b054887546bccf173972, type: 3}
-    audioClip: {fileID: 8300000, guid: 4cfbfa5ae54b70d42a9b1df2e3a0464f, type: 3}
+    audioClip: {fileID: 8300000, guid: 393cf7ef7f171ff43acf50ab47b8db74, type: 3}
 --- !u!114 &330585552
 MonoBehaviour:
   m_ObjectHideFlags: 0
