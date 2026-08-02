@@ -1,9 +1,11 @@
 From initial observation, there's models that won't be used
 or that are empty.
 
-X is for models that are ready and ported to Unity.
+X is for models that are ready, ported to Unity and in use.
+& is for models that are ready, ported to Unity but not used.
 / is for models that are ready but not ported to Unity.
 ~ is for models that are in progress.
+? is for models that need evaluation
 ! is for models that won't be included.
 
 - Prepare models for export to Unity
@@ -25,8 +27,8 @@ X is for models that are ready and ported to Unity.
     - [x] SCP-205-2 | 205_demon2.b3d
     - [x] SCP-205-3 | 205_demon3.b3d
     - [x] SCP-205-4 | 205_woman.b3d
-    - [!] SCP-372 | 372.b3d //Model is messed up.
-    - [] SCP-682 Arm | 682arm.b3d
+    - [?] SCP-372 | 372.b3d //Model is messed up.
+    - [x] SCP-682 Arm | 682arm.b3d
     - [x] SCP-513 Ghost | bll.b3d
     - [x] Class-D | classd.b3d
     - [x] NPC | clerk.b3d
@@ -37,8 +39,8 @@ X is for models that are ready and ported to Unity.
     - [x] SCP-035 | 035.b3d
     - [x] SCP-035 Tentacle | 035tentacle.b3d
     - [x] SCP-106 | 106_2.b3d
-    - [] SCP-1499-1 | 1499-1.b3d
-    - [!] Collider | doorhit.b3d
+    - [x] SCP-1499-1 | 1499-1.b3d
+    - [!] Collider | doorhit.b3d //This is a collider.
     - [x] Apache helicopter | apacherotor2.b3d
     - [x] Apache helicopter | apacherotor.b3d
     - [x] Apache helicopter | apache.b3d
@@ -48,9 +50,9 @@ X is for models that are ready and ported to Unity.
     - [x] NVGs | NVG.b3d
     - [x] Origami | origami.b3d
     - [x] SCP-500 | pill.b3d
-    - [] SCP-1499 | SCP-1499.b3d
-    - [] SCP-714 | scp714.b3d
-    - [] SCP-1025 | scp1025.b3d
+    - [x] SCP-1499 | SCP-1499.b3d
+    - [x] SCP-714 | scp714.b3d
+    - [x] SCP-1025 | scp1025.b3d
     - [x] SCP-Severed hand | severedhand.b3d
     - [x] Wallet | wallet.b3d
     - [x] Eyedrops | eyedrops.b3d
@@ -60,20 +62,20 @@ X is for models that are ready and ported to Unity.
     - [x] SCP-427 | 427.b3d
     - [x] Clipboard | clipboard.b3d
     - [x] Syringe | syringe.b3d
-    - [] Room | room3storage_hb.b3d
-    - [] Room | room3z2_hb.b3d
-    - [] Room | room2tesla_caution.b3d
-    - [] Room | room3gw_pipes.b3d
-    - [] Room | room3offices_hb.b3d
-    - [] Room | room2gw_pipes.b3d
-    - [] Room | medibay_props.b3d
-    - [] PC Monitor | monitor.b3d
-    - [] Room | monitor_checkpoint.b3d
-    - [] Room | pocketdimension2.b3d
-    - [] Room | pocketdimension3.b3d
-    - [] Room | pocketdimension4.b3d
-    - [] Room | pocketdimension5.b3d
-    - [] Room | pocketdimensionterrain.b3d
+    - [~] Room | room3storage_hb.b3d
+    - [~] Room | room3z2_hb.b3d
+    - [~] Room | room2tesla_caution.b3d
+    - [~] Room | room3gw_pipes.b3d
+    - [~] Room | room3offices_hb.b3d
+    - [~] Room | room2gw_pipes.b3d
+    - [~] Room | medibay_props.b3d
+    - [x] PC Monitor | monitor.b3d
+    - [~] Room | monitor_checkpoint.b3d
+    - [~] Room | pocketdimension2.b3d
+    - [~] Room | pocketdimension3.b3d
+    - [~] Room | pocketdimension4.b3d
+    - [~] Room | pocketdimension5.b3d
+    - [~] Room | pocketdimensionterrain.b3d
     - [] Room | room012_2.b3d
     - [] Room | room012_3.b3d
     - [] Room | room049_hb.b3d
@@ -82,44 +84,43 @@ X is for models that are ready and ported to Unity.
     - [] Room | gateatunnel.b3d
     - [] Room | gateawall1.b3d
     - [] Room | gateawall2.b3d
-    - [] ??? | intro_labels.b3d
-    - [] Desk | IntroDesk.b3d
-    - [] Drawers | IntroDrawer.b3d
-    - [] HID Gun | lightgun.b3d
-    - [] HID Gun base | lightgunbase.b3d
+    - [~] ??? | intro_labels.b3d
+    - [~] Desk | IntroDesk.b3d //Model uses lightmaps, UVs need to be fixed.
+    - [~] Drawers | IntroDrawer.b3d //Model uses lightmaps, UVs need to be fixed.
+    - [~] HID Gun | lightgun.b3d
+    - [~] HID Gun base | lightgunbase.b3d
     - [~] Elevator door | elevatordoor.b3d
-    - [] Exit 1 terrain | exit1terrain.b3d
-    - [] Room fan | fan.b3d
+    - [?] Exit 1 terrain | exit1terrain.b3d //Investigating how this model is used.
+    - [?] Room fan | fan.b3d
     - [] SCP-008 Lid | 008_2.b3d
     - [x] SCP-079 | 079.b3d
-    - [] ??? | 173_2.b3d.001
-    - [] ??? | 372_hb.b3d
-    - [] ??? | 1123_hb.b3d
-    - [] ??? | CamHead.b3d
-    - [] ??? | 1499object0_cull.b3d
-    - [] ??? | 1499object1.b3d
-    - [] ??? | 1499object2.b3d
-    - [] ??? | 1499object3.b3d
-    - [] ??? | 1499object4.b3d
-    - [] ??? | 1499object5.b3d
-    - [] ??? | 1499object6.b3d
-    - [] ??? | 1499object7.b3d
-    - [] ??? | 1499object8.b3d
-    - [] ??? | 1499object9.b3d
-    - [] ??? | 1499object10.b3d
-    - [] ??? | 1499object11.b3d
-    - [] ??? | 1499object12.b3d
-    - [] ??? | 1499object13.b3d
-    - [] ??? | 1499object14.b3d
-    - [] ??? | 1499object15.b3d
-    - [] ??? | 1499plane.b3d
+    - [?] ??? | 372_hb.b3d
+    - [?] ??? | 1123_hb.b3d
+    - [x] Camera head | CamHead.b3d
+    - [!] ??? | 1499object0_cull.b3d //Appears to be a collider
+    - [x] Decoration for 1499's dimension terrain | 1499object1.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object2.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object3.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object4.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object5.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object6.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object7.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object8.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object9.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object10.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object11.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object12.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object13.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object14.b3d
+    - [x] Decoration for 1499's dimension terrain | 1499object15.b3d
+    - [!] 1499's dimension floor | 1499plane.b3d //It's a plane with a texture of 1499's dimension on it. Easy to do in Unity
     - [x] Door | door.b3d
     - [x] Door frame | door_frame.b3d
-    - [] Wall | wall.b3d
+    - [~] Wall | wall.b3d
     - [x] Rock 1 | rock.b3d
     - [x] Rock 2 | rock2.b3d
     - [x] Tree 1 | treetest4.b3d
-    - [] Tree 2 | treetest5.b3d
+    - [~] Tree 2 | treetest5.b3d
 
   - [ ] DirectX Models
     - [x] N/A | 420.x

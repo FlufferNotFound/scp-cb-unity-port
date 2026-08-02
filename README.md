@@ -1,6 +1,6 @@
 This project is a port of 2012's horror game **SCP - Containment Breach**, by _Joonas Rikkonen_, version 1.3.11, to the Unity engine, while keeping it as 1:1 as possible with the original.
 
-For more information about the project, please check PROJECT_GOALS.md
+For more information about the project, please check **Goals.md**
 
 # Licensing
 

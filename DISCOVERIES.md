@@ -332,3 +332,11 @@ forestmonster.b3d - "regalis'\_mom_lol"
 it also has a bone named "kenneth"
 
 **FlufferNotFound**
+
+---
+
+#### 2026-07-25
+
+SCP-372's model is messed up on import
+
+**FlufferNotFound**
